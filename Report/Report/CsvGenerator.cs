@@ -39,7 +39,7 @@ namespace DapperDynamic.Report
                 var header = GetHeader(firstRow, splitter);
 
                 builder.Append(header + Environment.NewLine);
-                builder.Append(GetValues(dapperRows));
+                builder.Append(GetValues(dapperRows, splitter));
 
                 return builder.ToString();
             }
