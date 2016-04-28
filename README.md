@@ -9,7 +9,9 @@ How to use?
 
 To get csv in byteArray:
 
-    var myReport = connection.Query<dynamic>(sql); //result must be IEnumerable<dynamic>
+    //result must be IEnumerable<dynamic>
+    var myReport = connection.Query<dynamic>(sql); 
+    
     var report = CsvGenerator.GetByteArrayReport(myReport);
 
 You can get also the result as string:
