@@ -52,18 +52,14 @@ namespace DapperDynamic.Report
 
         private static string GetValues(IEnumerable<IDictionary<string, object>> dapperRows, string splitter)
         {
-            var builder = new StringBuilder();
-            var rowsWithValues = dapperRows.Select(x => x.Values);
+            var rowValues = dapperRows.Select(x => x.Values);
+            var values = rowValues
+                .Select(dictionary => GetValueLine(dictionary, splitter))
+                .ToArray();
 
-            foreach (var row in rowsWithValues)
-            {
-                foreach (var rowValue in row)
-                    builder.Append(rowValue + splitter);
-
-                builder.Append(Environment.NewLine);
-            }
-
-            return builder.ToString();
+            return string.Join(Environment.NewLine, values);
         }
+
+        private static string GetValueLine(ICollection<object> dictionary, string splitter) => $"{string.Join(splitter, dictionary)}{splitter}{splitter}";
     }
 }

@@ -48,7 +48,6 @@
     <Compile Include="Report\CsvGenerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Report\ExcelGenerator.cs" />
-    <Compile Include="Report\IGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
