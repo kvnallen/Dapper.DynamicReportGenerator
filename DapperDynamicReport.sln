@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperDynamic.Report", "DapperDynamic\DapperDynamic.Report.csproj", "{A0CFDC30-3DBF-43E7-BDE1-7B12C3889649}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperDynamic.Report.Tests", "DapperDynamic.Report.Tests\DapperDynamic.Report.Tests.csproj", "{595C2BEB-370C-4FBE-ACC3-022F51D4973E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{A0CFDC30-3DBF-43E7-BDE1-7B12C3889649}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0CFDC30-3DBF-43E7-BDE1-7B12C3889649}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0CFDC30-3DBF-43E7-BDE1-7B12C3889649}.Release|Any CPU.Build.0 = Release|Any CPU
+		{595C2BEB-370C-4FBE-ACC3-022F51D4973E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{595C2BEB-370C-4FBE-ACC3-022F51D4973E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{595C2BEB-370C-4FBE-ACC3-022F51D4973E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{595C2BEB-370C-4FBE-ACC3-022F51D4973E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {51DFFDE8-8CCB-4B87-B2D8-28679B82D8A5}
 	EndGlobalSection
 EndGlobal
