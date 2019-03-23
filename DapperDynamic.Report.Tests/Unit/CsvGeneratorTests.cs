@@ -25,12 +25,19 @@ namespace DapperDynamic.Report.Tests
                     ["user"] = null,
                     ["age"] = null,
                     ["sex"] = "male"
+                },
+                new Dictionary<string, object>
+                {
+                    ["user"] = "mr.popo",
+                    ["age"] = 10000,
+                    ["sex"] = "male"
                 }
             };
 
             var expected = $"user{splitter}age{splitter}sex{Environment.NewLine}" +
                            $"james{splitter}30{splitter}{splitter}{splitter}{Environment.NewLine}" +
-                           $"{splitter}{splitter}male{splitter}{splitter}";
+                           $"{splitter}{splitter}male{splitter}{splitter}{Environment.NewLine}" +
+                           $"mr.popo{splitter}10000{splitter}male{splitter}{splitter}";
 
             var result = CsvGenerator.GetStringReport(data, splitter);
             result.Should().Be(expected);
