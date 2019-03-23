@@ -17,8 +17,4 @@
     <ProjectReference Include="..\DapperDynamic\DapperDynamic.Report.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Integration\" />
-  </ItemGroup>
-
 </Project>
