@@ -35,9 +35,9 @@ namespace DapperDynamic.Report.Tests
             };
 
             var expected = $"user{splitter}age{splitter}sex{Environment.NewLine}" +
-                           $"james{splitter}30{splitter}{splitter}{splitter}{Environment.NewLine}" +
-                           $"{splitter}{splitter}male{splitter}{splitter}{Environment.NewLine}" +
-                           $"mr.popo{splitter}10000{splitter}male{splitter}{splitter}";
+                           $"james{splitter}30{splitter}{splitter}{Environment.NewLine}" +
+                           $"{splitter}{splitter}male{splitter}{Environment.NewLine}" +
+                           $"mr.popo{splitter}10000{splitter}male{splitter}";
 
             var result = CsvGenerator.GetStringReport(data, splitter);
             result.Should().Be(expected);

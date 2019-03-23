@@ -60,6 +60,6 @@ namespace DapperDynamic.Report
             return string.Join(Environment.NewLine, values);
         }
 
-        private static string GetValueLine(ICollection<object> dictionary, string splitter) => $"{string.Join(splitter, dictionary)}{splitter}{splitter}";
+        private static string GetValueLine(ICollection<object> dictionary, string splitter) => $"{string.Join(splitter, dictionary)}{splitter}";
     }
 }
